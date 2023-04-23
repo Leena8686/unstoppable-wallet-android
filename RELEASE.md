@@ -47,17 +47,22 @@ $ git branch version/0.1
 #### 7.1 Build apk file via Docker.
 
 You will find a bash script located at `[Wallet-Project-Path]/docker/build-apk.sh`
+
 1. Create and go to temporary folder for APK output
 2. Run command:
+
 ```
 ./build-apk.sh [REPO-TAG] [FULL_PATH_TO_KEYSTORE] [KEYSTORE_PASSWORD]
 ```
-Where:<br>
-REPO-TAG: Repository tag from which you want to build APK<br>
-FULL_PATH_TO_KEYSTORE: Full Location of the keystore file<br>
-KEYSTORE_PASSWORD: Keystore password<br>
+
+Where:\
+REPO-TAG: Repository tag from which you want to build APK\
+FULL\_PATH\_TO\_KEYSTORE: Full Location of the keystore file\
+KEYSTORE\_PASSWORD: Keystore password\
+
 
 Example:
+
 ```
 ./build-apk.sh 0.18.0 ~/Documents/Keystore/Apk_HorSys/horsys Keystore_Psw
 ```
@@ -69,9 +74,11 @@ Run command:
 ```
 ./test.sh [APK-FILE-NAME]
 ```
-Where:<br>
-`test.sh` bash script located at `[Wallet-Project-Path]/docker`<br>
-APK-FILE-NAME: Name of the apk file<br>
+
+Where:\
+`test.sh` bash script located at `[Wallet-Project-Path]/docker`\
+APK-FILE-NAME: Name of the apk file\
+
 
 ### 8. Upload Build to Google Play
 
